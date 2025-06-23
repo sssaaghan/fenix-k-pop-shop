@@ -1,0 +1,95 @@
+@import './css/header.css';
+@import './css/index.css';
+@import './css/footer.css';
+@import './css/about_us.css';
+@import './css/info.css';
+@import './css/media.css';
+@import './css/cart.css';
+
+
+
+.textprod{
+    font-family: 'PT Sans Narrow';
+}
+
+
+
+/* кнопка прокрутки */
+
+
+ #scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: none; /* Ховаємо кнопку на початку */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Адаптація для маленьких екранів */
+@media (max-width: 768px) {
+    #scrollTopBtn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+/* CТОРІНКА СОРІ */
+.message{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* центр по горизонталі */
+    align-items: center;     /* центр по вертикалі */
+margin-bottom: 50px;
+}
+.modal-box {
+    background-color: #000;
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 2rem;
+    color: #fff;
+    width: 90%;
+    max-width: 400px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 15px red;
+  }
+  .modal-box h4 {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid red;
+    padding-bottom: 0.5rem;
+  }
+  .modal-box .btn-close-custom {
+    position: center;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .btn-main {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .btn-main:hover {
+    background-color: #fff;
+    color: red;
+  }
+  

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- бутсрап і стилі -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Шрифти мають бути -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans+Narrow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <title>Fenix k-pop shop</title>
+
+
+</head>
+<style>
+    .text_404 {
+        font-family: 'PT Sans Narrow';
+        font-weight: 100;
+
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    h1 {
+
+        font-family: 'PT Sans Narrow';
+        font-weight: 900;
+        color: #d32f2f;
+        font-size: 150px;
+
+    }
+
+    p {
+        font-size: 30px;
+        color: #555;
+    }
+
+    a.btn {
+        background-color: #d32f2f;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 20px 60px;
+        font-weight: 300;
+        border-radius: 10px;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    a.btn:hover {
+        background-color: #000000;
+        color: #ff0000;
+    }
+</style>
+
+
+<body>
+    <!-- Верхній навбар  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="index.html"> <img src="img/header/логотип 1.png" alt=""></a>
+
+
+
+            <!-- кошик тут буде -->
+
+            <a href="#" class="nav-item cart-icon">
+                <i class="bi bi-cart"></i>
+                <span id="cart-count" class="badge badge-danger">0</span>
+            </a>
+
+
+            <!-- кнопка бургера -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+
+            <div class="collapse navbar-collapse justify-content-center " id="navbarNavDropdown">
+                <ul class="navbar-nav navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="about_us.html">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Інформація</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Каталог
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu">
+
+                                <!-- Мужики -->
+                                <a class="dropdown-item dropdown-toggle" href="men.html" id="mensGroupsDropdown"
+                                    role="button" aria-expanded="false">
+                                    Чоловічі гурти
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="skz.html">Stray Kids</a></li>
+                                    <li><a class="dropdown-item" href="exo.html">EXO</a></li>
+                                    <li><a class="dropdown-item" href="aeteez.html">ATEEZ</a></li>
+                                    <li><a class="dropdown-item" href="zb1.html">Zerobaseone</a></li>
+                                    <li><a class="dropdown-item" href="txt.html">TXT</a></li>
+                                    <li><a class="dropdown-item" href="sorry.html">BTS</a></li>
+                                    <li><a class="dropdown-item" href="sorry.html">Xdinary Heroes</a></li>
+                                    <li><a class="dropdown-item" href="sorry.html">Astro</a></li>
+                                    <li><a class="dropdown-item" href="sorry.html">Enhypen</a></li>
+                                    <li><a class="dropdown-item" href="sorry.html">Seventeen</a></li>
+                                    <li><a class="dropdown-item" href="">Список буде доповнюватись ♡</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Жінки -->
+                            < <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="404.html" id="womensGroupsDropdown" role="button"
+                                  aria-expanded="false">
+                                  Жіночі гурти
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="404.html">(G)i-dle</a></li>
+                                  <li><a class="dropdown-item" href="404.html">TWICE</a></li>
+                                  <li><a class="dropdown-item" href="404.html">Red Velvet</a></li>
+                                  <li><a class="dropdown-item" href="404.html">ITZY</a></li>
+                                  <li><a class="dropdown-item" href="404.html">New Jeanse</a></li>
+                                  <li><a class="dropdown-item" href="sorry.html">BLACK PINK</a></li>
+                                  <li><a class="dropdown-item" href="sorry.html">MAMAMOO</a></li>
+                                  <li><a class="dropdown-item" href="sorry.html">Aespa</a></li>
+                                  <li><a class="dropdown-item" href="sorry.html">Le Sserafim</a></li>
+                                  <li><a class="dropdown-item" href="sorry.html">Nmixx</a></li>
+                                  <li><a class="dropdown-item" href="">Список буде доповнюватись ♡</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="packaging.html">Все для пакування</a></li>
+                            <li><a class="dropdown-item" href="fribies.html">Фрібі</a></li>
+                            <li><a class="dropdown-item" href="binders.html">Біндери</a></li>
+                        </ul>
+                    </li>
+                    <!-- Соц мережі -->
+                    <div class="social-icons nav-item">
+                        <a href="https://www.instagram.com/yokkaai/" target="_blank" class="nav-item"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/alinka.bas?locale=uk_UA" target="_blank" class="nav-item"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/sssaaghan" target="_blank" class="nav-item"><i
+                                class="bi bi-twitter"></i></a>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="text_404">
+        <!-- <img src="img/404/логотип.svg" alt="Фенікс" class="phoenix" > -->
+        <h1>404</h1>
+        <p>Ой! Схоже, ця сторінка згоріла як фенікс 🔥<br>Але не хвилюйся — ми завжди відроджуємось 🌞</p>
+        <a href="/index.html" class="btn">Повернутись на головну</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- кнопка прокрутки -->
+    <button id="scrollTopBtn" class="btn btn-danger rounded-circle shadow-lg">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+
+
+
+    <!-- Футер -->
+
+
+
+    <footer class="bg-black text-white m-0 p-0">
+        <div class="container-fluid m-0 p-0">
+            <div class="row align-items-center g-0 m-0 p-0"> <!-- g-0 прибирає відступи між колонками -->
+                <!-- Логотип -->
+                <div class="col-md-2 text-center text-md-start">
+                    <img src="img/footer/логотип.svg" alt="Logo" class="img-fluid" style="max-width: 200px;">
+                </div>
+
+                <!-- Графік роботи -->
+                <div class="col-md-4 text-center footertext">
+                    <div class="work">Графік роботи:</div>
+                    <div>ПН-ПТ: 09:00 - 19:00</div>
+                    <div>Субота: 10:00 - 18:00</div>
+                    <div>Неділя - <span class="work">ВИХІДНИЙ</span></div>
+
+                    <div class="social-icons mt-3 d-flex justify-content-center gap-3">
+                        <a href="https://www.instagram.com/yokkaai/" target="_blank" class="nav-item"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/alinka.bas?locale=uk_UA" target="_blank" class="nav-item"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/sssaaghan" target="_blank" class="nav-item"><i
+                                class="bi bi-twitter"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- Карта -->
+                <div class="col-md-6 p-0 m-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK" class="w-100 d-block"
+                        style="height: 300px; border: none; display: block; margin: 0; padding: 0;" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Модальне вікно кошика -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Кошик</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItemsContainer">
+                        <p class="text-center" id="emptyCartMessage">Кошик порожній</p>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <h5 class="fw-bold">Загальна сума: <span id="totalPrice">0</span>₴</h5>
+                    <button type="button" class="btn btn-custom" id="submitOrderButton" data-bs-toggle="modal"
+                        data-bs-target="#orderModal">Оформити замовлення</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно оформлення замовлення -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Оформлення замовлення</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="orderForm">
+                        <!-- Введення ПІБ -->
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Прізвище, ім'я, по батькові</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+
+                        <!-- Введення телефону -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+
+                        <!-- Вибір доставки -->
+                        <div class="mb-3">
+                            <label for="deliveryChoice" class="form-label">Вибір доставки</label>
+                            <select class="form-select" id="deliveryChoice" required>
+                                <option value="pickup">Самовивіз</option>
+                                <option value="novaPoshta">Нова пошта</option>
+                                <option value="ukrPost">Укрпошта</option>
+                            </select>
+                        </div>
+
+                        <!-- Інформація про доставку для Нова пошта -->
+                        <div id="novaPoshtaFields" style="display: none;">
+                            <div class="mb-3">
+                                <label for="region" class="form-label">Область</label>
+                                <input type="text" class="form-control" id="region" list="regionList"
+                                    placeholder="Введіть область">
+                                <datalist id="regionList">
+                                    <option value="Kyiv">Київ</option>
+                                    <option value="Lviv">Львів</option>
+                                    <option value="Odessa">Одеська</option>
+                                    <option value="Kharkiv">Харків</option>
+                                    <option value="Dnipro">Дніпро</option>
+                                    <option value="Kherson">Херсон</option>
+                                    <option value="Vinnytsia">Вінниця</option>
+                                    <option value="Mykolaiv">Миколаїв</option>
+                                    <option value="Ternopil">Тернопіль</option>>
+                                    <option value="Zhitomir">Житомир</option>
+                                    <option value="Cherkasy">Черкаси</option>
+                                    <option value="Chernihiv">Чернігів</option>
+                                    <option value="Sumy">Суми</option>
+                                    <option value="Poltava">Полтава</option>
+                                    <option value="Kropyvnytskyi">Кропивницький</option>
+                                    <option value="Rivne">Рівне</option>
+                                    <option value="Ivano-Frankivsk">Івано-Франківськ</option>
+                                    <option value="Chernivtsi">Чернівці</option>
+                                    <option value="Zakarpattia">Закарпаття</option>
+                                    <option value="Luhansk">Луганська</option>
+                                    <option value="Donetsk">Донецька</option>
+                                    <option value="Kirovohrad">Кіровоград</option>
+                                    <option value="Khmelnytskyi">Хмельницький</option>
+                                    <!-- Додайте всі області, що необхідні -->
+                                </datalist>
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label">Місто</label>
+                                <input type="text" class="form-control" id="city" placeholder="Введіть місто">
+                            </div>
+                            <div class="mb-3">
+                                <label for="department" class="form-label">Відділення</label>
+                                <input type="text" class="form-control" id="department"
+                                    placeholder="Введіть відділення">
+                            </div>
+                        </div>
+
+                        <!-- Інформація для Укрпошта -->
+                        <div id="ukrPostFields" style="display: none;">
+                            <div class="mb-3">
+                                <label for="postcode" class="form-label">Індекс</label>
+                                <input type="text" class="form-control" id="postcode" placeholder="Введіть індекс">
+                            </div>
+                        </div>
+
+                        <!-- Метод оплати -->
+                        <div class="mb-3">
+                            <label class="form-label">Метод оплати</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentChoice" id="payNow"
+                                    value="payNow" required>
+                                <label class="form-check-label" for="payNow">Оплата зараз</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentChoice" id="payUponReceiving"
+                                    value="payUponReceiving" required>
+                                <label class="form-check-label" for="payUponReceiving">Оплата при отриманні</label>
+                            </div>
+                        </div>
+
+                        <!-- Кнопка для оформлення замовлення -->
+                        <button type="button" class="btn btn-custom w-100" id="confirmOrderButton">Підтвердити
+                            замовлення</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно оплати для "Оплата зараз" -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content payment-modal-content">
+                <div class="modal-header">
+                    <h2>Оплата успішна!</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ваше замовлення було успішно оплачено. Дякуємо за покупку!</p>
+                    <button type="button" class="btn btn-custom" id="goToHomePageButton">Перейти на головну</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно оплати при отриманні -->
+    <div class="modal fade" id="paymentUponReceivingModal" tabindex="-1"
+        aria-labelledby="paymentUponReceivingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content payment-confirmation">
+                <div class="modal-header">
+                    <h2>Оплата при отриманні</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ваше замовлення буде доставлене. Ви зможете оплатити його при отриманні.</p>
+                    <button type="button" class="btn btn-custom" id="goToHomePageUponReceivingButton">Перейти на
+                        головну</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Скрипти -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
