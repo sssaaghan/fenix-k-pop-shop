@@ -1,0 +1,202 @@
+
+
+/* стилі для кошика */
+
+
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  #cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+
+  .cart-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  #cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+
+
+  /* модальне кошика */
+  .modal-open {
+    overflow: hidden; /* Блокуємо прокручування сторінки */
+  }
+  
+  .modal-backdrop {
+    z-index: 1040; /* Залишаємо backdrop поверх всіх елементів */
+  }
+  
+
+  /* стилі модалки */
+  <style>
+  /* Задаємо шрифт для всього модального вікна */
+  #cartModal {
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+
+  /* Колір заголовку модалки */
+  .modal-title {
+    color: #C90E0E;
+  }
+
+  /* Колір для тексту і кнопок у модальному вікні */
+  .modal-body,
+  .modal-footer {
+    color: #fff;
+  }
+
+  /* Кнопка закриття з новим кольором */
+  .btn-close {
+    background-color: #C90E0E;
+  }
+
+  /* Кнопка "Оформити замовлення" */
+  .btn-success {
+    background-color: #C90E0E;
+    border-color: #C90E0E;
+  }
+
+  .btn-success:hover {
+    background-color: #A60707;
+    border-color: #A60707;
+  }
+
+
+
+  /* додано в кошик віконечко */
+  .modal-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; /* чорний фон */
+    color: red; /* червоний текст */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    border: 2px solid red; /* червона обводка */
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+   /* Стиль для модального вікна */
+   .modal-content {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid red;
+}
+
+.modal-header,
+.modal-footer {
+    border-bottom: 1px solid red;
+}
+
+.modal-header .modal-title {
+    color: red;
+}
+
+.btn-danger {
+    border-color: red;
+}
+
+.btn-danger:hover {
+    background-color: #c70000;
+    border-color: #c70000;
+}
+
+.btn-close {
+    color: red;
+}
+
+.payment-modal-content {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.payment-modal-content h2 {
+    color: red;
+}
+
+.payment-modal-content button {
+    background-color: red;
+    border-color: red;
+    padding: 10px 20px;
+    color: white;
+}
+
+.payment-modal-content button:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.payment-confirmation {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.payment-confirmation button {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+.payment-confirmation button:hover {
+    background-color: #c70000;
+    border-color: #c70000;
+}
+
+/* Стиль для кнопок з чорним фоном і червоною обводкою */
+.btn-custom {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
+
+.btn-custom:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid darkred;
+}
+
+.form-select, .form-control {
+    background-color: #333;
+    color: white;
+    border: 1px solid red;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: red;
+    background-color: #333;
+}

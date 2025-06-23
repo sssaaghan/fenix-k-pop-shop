@@ -1,0 +1,246 @@
+/* текст перед банером */
+.gaslo{
+    margin: 50px;
+    color:#C90E0E;
+    font-family: "Merriweather";
+    font-size: 20px;
+  text-align: center;
+}
+
+
+/* текст перед картами */
+
+.text_buy{
+    font-family: "Merriweather";
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+
+
+
+/* карти */
+
+
+
+.card {
+    background-color: #111; /* Темний фон картки */
+    border: none;
+}
+
+.card-title, .card-text {
+    color: #fff; /* Білий текст */
+    font-family: "Merriweather";
+  
+}
+
+.card-text.text-danger {
+    color: #aaa !important; /* Сіра ціна */
+    font-weight: lighter !important;
+    
+  
+}
+
+
+.btn-danger {
+    background-color: #000; /* Чорний фон кнопки */
+    color: #C90E0E; /* Червоний текст */
+    border: 2px solid #C90E0E; /* Червона обводка */
+    font-family: "Merriweather";
+}
+
+.btn-danger:hover {
+    background-color: #C90E0E; /* Червоний фон при наведенні */
+    color: #000; /* Чорний текст при наведенні */
+}
+
+/* Вирівнювання цін на одному рівні */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Merriweather";
+}
+
+.card-text.text-danger {
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Відгуки */
+.testimonial-card {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    font-family: "Merriweather";
+    font-weight: lighter;
+  }
+
+  .testimonial-avatar {
+    text-align: center;
+    margin-right: 20px;
+    font-family: "Merriweather";
+    font-weight: 100;
+  }
+
+  .testimonial-avatar img {
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+
+  .testimonial-avatar h5 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .testimonial-content {
+    flex-grow: 1;
+  }
+
+  .zirochka {
+    color: #f00;
+    margin-bottom: 10px;
+    font-size: 2.0rem; /* Збільшено розмір зірок */
+  }
+  
+.reviews{
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Merriweather";
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Залишити відгук */
+    
+.feedback-form {
+    background-color: #000; /* Чорний фон форми */
+    border: 2px solid red; /* Червона рамка */
+    border-radius: 20px; /* Закруглення */
+    padding: 20px;
+}
+
+.feedback-form .form-control {
+    background-color: #000; /* Чорний фон інпутів */
+    color: #fff; /* Білий текст */
+    border: 2px solid red; /* Червона рамка */
+    border-radius: 10px;
+}
+
+.feedback-form .form-control::placeholder {
+    color: #666; /* Сірий текст для placeholder */
+}
+
+.feedback-form .form-check-input {
+    background-color: #000; /* Чорний фон чекбокса */
+    border: 2px solid red; /* Червона рамка */
+}
+
+.feedback-form .btn-danger {
+    background-color: #000; /* Чорний фон кнопки */
+    color: red; /* Червоний текст */
+  
+}
+
+.feedback-form .btn-danger:hover {
+    background-color: red; /* Червоний фон при наведенні */
+    color: #000; /* Чорний текст при наведенні */
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stars .star {
+    font-size: 5.5rem;
+    color: #fff; /* Початковий білий колір */
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+   
+}
+
+.stars .star:hover,
+.stars .star.active {
+    color: red; /* Червоний для вибраних зірок */
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-section .left,
+.form-section .right {
+    flex: 1;
+}
+
+.form-section .left {
+    max-width: 45%;
+}
+
+.form-section .right textarea {
+    height: 100%;
+}
+
+.form-label  {
+color: #fff;
+}
+.form-check-label{
+    color: #fff;
+}
+
+
+ /* Стилі для зірочок */
+ .stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Між зірочками */
+    font-size: 2rem; /* Зробіть розмір відносним */
+  }
+  
+  .star {
+    cursor: pointer;
+    color: #d3d3d3; /* Колір для неактивних зірочок */
+    transition: color 0.3s ease;
+  }
+  
+  .star.active {
+    color: #ff9900; /* Колір для активних зірочок */
+  }

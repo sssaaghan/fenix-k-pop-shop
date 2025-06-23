@@ -1,0 +1,34 @@
+.custom-section h5 {
+    color: red;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+
+    font-size: 24px;
+    line-height: 41px;
+
+}
+
+.custom-section ol {
+    padding-left: 20px;
+    /* Відступ для нумерованих списків */
+}
+
+.custom-section ol li {
+    margin-bottom: 10px;
+    /* Відступ між пунктами */
+}
+
+
+
+.custom-section {
+
+
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 41px;
+
+
+}

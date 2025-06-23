@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    .cart-icon {
+  
+        right: -40px; /* Збільшуємо значення, щоб посунути правіше */
+        color: #C90E0E;
+    
+      }
+      
+}
+
+
+
+
+@media (max-width: 768px) {
+    .stars {
+      font-size: 4.5rem; /* Зменшуємо розмір зірочок на мобільних */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .stars {
+      font-size: 5.2rem; /* Ще більше зменшуємо на дуже маленьких екранах */
+    }
+  }
+
+
+ 

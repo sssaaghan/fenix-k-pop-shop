@@ -1,0 +1,159 @@
+
+
+
+/* Стилі для вкладених меню */
+.dropdown-submenu {
+    position: relative;
+  }
+  .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%; 
+    margin-top: -0.5rem;
+  }
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block; 
+  }
+  
+
+  /* Загальний стиль навбару */
+.navbar {
+    background-color: #000 !important; /* Примусово чорний фон */
+    padding: 1rem; /* Внутрішні відступи для більшого простору */
+    border: none; /* Забираємо можливі рамки */
+    box-shadow: none; /* Забираємо можливі тіні */
+    
+  }
+.nav-item{
+    margin: 10px 30px; 
+
+}
+
+  /* Логотип */
+  .navbar-brand {
+    font-family: "Merriweather";
+    color: #fff; /* Білий текст */
+    font-weight: bold;
+    text-transform: uppercase; /* Всі букви великими */
+  }
+  
+  .navbar-brand:hover {
+    text-decoration: none;
+  }
+  
+  /* Стилі для пунктів меню */
+  .nav-link {
+    color: #fff; 
+    font-family: "Merriweather";
+    font-size: 24px;
+    font-weight: bold;
+    font-weight: 700;
+  }
+  
+  .nav-link:hover {
+    color: #C90E0E;
+  }
+
+  .nav-link.active:hover {
+    color: #C90E0E;
+  }
+  
+  /* "Каталог" */
+  .nav-item .dropdown-toggle {
+    color: #C90E0E;
+    font-family: "Merriweather";
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #C90E0E;
+    border-radius: 15px;
+    
+    
+  
+  }
+  
+  .nav-item .dropdown-toggle:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  /* Випадаюче меню */
+  .dropdown-menu {
+    background-color: #000;
+    border: none;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    font-family: "Merriweather";
+    color: #fff;
+    border: none;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    color: #C90E0E;
+  }
+  
+  /* Підменю */
+  .dropdown-menu .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-menu .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+  
+  /* Соцмережі */
+  .social-icons a {
+    color: #fff;
+    font-size: 1.9rem;
+    
+  }
+  
+  .social-icons a:hover {
+    color: #C90E0E;
+  }
+  
+  /* Іконка кошика */
+  .cart-icon {
+    color:#C90E0E;
+    font-size: 1.7rem;
+    transition: color 0.3s ease;
+  }
+  
+  .cart-icon:hover {
+    color: #fff;
+  }
+  
+
+  nav {
+    position: fixed  !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; 
+  }
+
+  body {
+    padding-top: 170px; /* Встановлюємо відступ для контенту, щоб він не перекривався навбаром */
+  }
+  
+  @media (max-width: 767px) {
+    body {
+      padding-top: 170px; /* Менший відступ для мобільних пристроїв */
+    }
+  
+    nav {
+      position: relative; /* Для мобільних пристроїв може бути краще не фіксувати навбар */
+      z-index: 1050; /* Для збереження порядку відображення */
+    }
+  
+    .navbar-collapse {
+      margin-top: 10px; /* Може бути корисно, щоб навбар не "перекривав" інші елементи на маленьких екранах */
+    }
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(22%) sepia(91%) saturate(7470%) hue-rotate(358deg) brightness(95%) contrast(115%);
+  }
+  
+ 

@@ -1,0 +1,91 @@
+
+.zagolovok{
+    /* Про нас */
+
+font-family: 'PT Sans Narrow';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 40px;
+
+color: #000000;
+
+
+}
+
+
+/* текс про нас */
+
+.text_about{
+font-family: 'PT Sans Narrow';
+font-style: normal;
+font-weight: 400;
+font-size: 31px;
+line-height: 40px;
+}
+
+.class_cards{
+    margin-bottom: 100px ;
+}
+
+.vidstup{
+    text-indent: 40px;
+
+}
+
+.about_color{
+    color:#C90E0E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* карточки */
+
+
+
+.card-custom {
+    background-color: #000; /* Чорний фон */
+    color: #fff; /* Білий текст */
+    border: 2px solid red; /* Червона рамка */
+    border-radius: 10px; /* Округлені кути */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 250px; /* Фіксована висота */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Вертикальне вирівнювання */
+    align-items: center; /* Горизонтальне вирівнювання */
+}
+.card-custom:hover {
+    transform: scale(1.05); /* Збільшення при наведенні */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5); /* Тінь при наведенні */
+}
+.card-custom i {
+    font-size: 2rem;
+    color: red; /* Червоні іконки */
+    margin-bottom: 10px;
+}
+.card-custom h5 {
+    font-size: 1rem;
+    line-height: 1.5;
+}
